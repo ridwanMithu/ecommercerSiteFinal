@@ -1,20 +1,22 @@
 
+import { Outlet } from 'react-router-dom'
 import './App.css'
 import HeroSection from './Component/HeroSection'
 import Navbar from './Component/Navbar'
 import ProductSection from './Component/ProductSection'
+import Footer from './Component/Footer'
 
-function App() {
+function Home() {
 
   return (
     <>
       <Navbar />;
-      <HeroSection/>;
-      <div className="text-4xl font-semibold text-center uppercase text-rose-600 my-7">Top Selling Products</div>
-      <ProductSection />
+      <Outlet />;
+      <Footer />;
+
 
     </>
   )
 }
 
-export default App
+export default Home

@@ -1,12 +1,12 @@
 import  { useState, useEffect } from 'react'
 import Cards from './Cards';
 
-const ProductSection = () => {
+const Collections = () => {
 
   const[products, setProducts]=useState([]);
 
   const getProduct=()=>{
-    fetch('https://dummyjson.com/products?limit=4')
+    fetch('https://dummyjson.com/products')
       .then(res => res.json())
       .then((data)=>setProducts(data.products));
   }
@@ -15,12 +15,11 @@ const ProductSection = () => {
     getProduct();
   },[])
 
-  console.log(products)
 
   return (
 
     <>
-      <div className="text-4xl font-semibold text-center uppercase text-rose-600 my-7">Top Selling Products</div>
+      <div className="text-4xl font-semibold text-center uppercase text-rose-600 my-7">Browse All Products</div>
       <div  className="flex flex-wrap gap-3 justify-evenly">
         {
           products.map((product)=><Cards cardInfo={product} key={product.id} />
@@ -31,4 +30,4 @@ const ProductSection = () => {
   )
 }
 
-export default ProductSection
+export default Collections

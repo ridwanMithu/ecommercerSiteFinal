@@ -1,7 +1,9 @@
+import ProductSection from "./ProductSection";
 
 
 const HeroSection = () => {
   return (
+    <>
     <div>
       <main className="relative h-screen overflow-hidden bg-white dark:bg-gray-800">
         <header className="z-30 flex items-center w-full h-24 sm:h-32">
@@ -32,7 +34,7 @@ const HeroSection = () => {
                   href="#"
                   className="px-4 py-2 text-pink-500 uppercase bg-transparent border-2 border-pink-500 rounded-lg dark:text-white hover:bg-pink-500 hover:text-white text-md"
                 >
-                  Read more
+                  Offers
                 </a>
               </div>
             </div>
@@ -46,6 +48,8 @@ const HeroSection = () => {
         </div>
       </main>
     </div>
+    <ProductSection />
+    </>
   );
 }
 

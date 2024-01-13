@@ -1,18 +1,15 @@
 
 
 
+
 const Navbar = () => {
     const menuItems=[
     {
       item: "Home",
-      url:"/"
+      url: "/"
     },
     {
       item: "Collections",
-      url:"/"
-    },
-    {
-      item: "Refund Policy",
       url:"/"
     },
     {

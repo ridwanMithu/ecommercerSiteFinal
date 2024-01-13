@@ -16,7 +16,7 @@ const Cards = ({cardInfo}) => {
           <p className="font-bold text-rose-600">${price}</p>
           <p>only {stock} left</p>
           <div className="justify-end card-actions">
-            <button className="btn btn-info">More Details</button>
+            <button className="mx-auto btn btn-info">More Details</button>
           </div>
         </div>
       </div>
