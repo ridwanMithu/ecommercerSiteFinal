@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom"
+import ContactUs from "../ContactUs"
+import Home from "../Home"
+import Collections from "./Collections"
 
 
 
@@ -6,19 +10,19 @@ const Navbar = () => {
     const menuItems=[
     {
       item: "Home",
-      url: "/"
+      url: "/Home",
     },
     {
       item: "Collections",
-      url:"/"
+      url: "/Collections",
     },
     {
-      item: "Contact Us",
-      url:"/"
+      item: "ContactUs",
+      url: "/ContactUs",
     }
     ]
 
-
+ 
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -27,8 +31,12 @@ const Navbar = () => {
             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </div>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">{
-              menuItems.map((menu,i)=><li key={i}><a>{menu.item}</a></li>)
+            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            {
+              menuItems.map((menu,i)=>
+              (<li key={i}>
+              <Link to={menu.url} >{menu.item}</Link>
+              </li>))
               }
             </ul>
           </div>

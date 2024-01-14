@@ -5,13 +5,13 @@ const ContactUs = () => {
       <div className="flex items-center justify-center min-h-screen p-6 bg-gray-100">
         <div className="container max-w-screen-lg mx-auto">
           <div>
-            <h2 className="text-xl font-semibold text-gray-600">Let Us if we have missed anything</h2>
+            <h2 className="text-xl font-semibold text-gray-600">Let us know if we have missed anything</h2>
             <p className="mb-6 text-gray-500">We will get back to you soon</p>
 
             <div className="p-4 px-4 mb-6 bg-white rounded shadow-lg md:p-8">
               <div className="grid grid-cols-1 gap-4 text-sm gap-y-2 lg:grid-cols-3">
                 <div className="text-gray-600">
-                  <p className="text-lg font-medium">Personal Details</p>
+                  <p className="text-lg font-medium">Product Details</p>
                   <p>Please fill out all the fields.</p>
                 </div>
 
